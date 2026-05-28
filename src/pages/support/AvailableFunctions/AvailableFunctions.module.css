@@ -1,0 +1,28 @@
+.main-conteiner-available-func {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  h2 {
+    margin-top: 25px;
+  }
+}
+.available_functions_pics {
+  margin-top: 15px;
+  width: 70%;
+}
+.main_conteiner_af {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .main-conteiner-available-func {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

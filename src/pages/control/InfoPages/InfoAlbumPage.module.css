@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 70%;
+  margin: 0px auto 0px auto;
+  justify-content: center;
+}
+
+.info_container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  gap: 10px;
+}
+
+.info_track_container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  gap: 10px;
+}
+
+.album_logo {
+  width: 300px;
+  height: 300px;
+  align-self: center;
+}
+
+.album_info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  padding: 15px;
+  flex: 1;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.btns {
+  display: flex;
+  padding: 10px 0px 10px 0px;
+  justify-content: space-between;
+}
+
+.track_container {
+  border: 3px solid black;
+  padding: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .info_container {
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info_track_container {
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+  }
+}

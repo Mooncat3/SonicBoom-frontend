@@ -1,0 +1,51 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--sb-input-border-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  position: relative; /* Для позиционирования кнопок */
+}
+
+.status {
+  font-weight: bold;
+}
+
+.content {
+  flex-grow: 1; /* Позволяет содержимому занимать доступное пространство */
+}
+
+.buttons {
+  display: flex; /* Используем flex для кнопок */
+  gap: 10px; /* Промежуток между кнопками */
+  margin-top: 10px; /* Отступ сверху для кнопок */
+  justify-content: flex-end; /* Выравнивание кнопок по правому краю */
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  min-width: 80px; /* Минимальная ширина кнопки */
+}
+
+.edit-btn {
+  background-color: #4caf50; /* Цвет кнопки "Редактировать" */
+  color: white; /* Цвет текста */
+}
+
+.delete-btn {
+  background-color: #f44336; /* Цвет кнопки "Удалить" */
+  color: white; /* Цвет текста */
+}
+
+.edit-btn:hover {
+  background-color: #45a049; /* Цвет при наведении для кнопки "Редактировать" */
+}
+
+.delete-btn:hover {
+  background-color: #e53935; /* Цвет при наведении для кнопки "Удалить" */
+}

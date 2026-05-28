@@ -1,0 +1,41 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  margin-top: 20px;
+  width: 202px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  .about_user {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .about_user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .about_user {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .actions {
+    gap: 0px;
+  }
+}

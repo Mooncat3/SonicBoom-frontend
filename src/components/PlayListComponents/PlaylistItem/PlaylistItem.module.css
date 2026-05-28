@@ -1,0 +1,67 @@
+.item {
+  background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid rgba(239, 235, 235, 0.656);
+  padding: 10px;
+}
+
+.picture {
+  overflow: hidden;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px 0px 8px;
+  gap: 10px;
+}
+
+.title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions_button {
+  flex-shrink: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+}
+
+.bars-container {
+  display: block;
+}
+
+.bars-container {
+  position: relative;
+}
+
+@media all and (max-width: 440px) {
+  .bottom {
+    padding: 0px 4px 0px 6px;
+  }
+}
+
+@media all and (max-width: 898px) {
+  .bottom {
+    padding: 0px 10px 0px 11px;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .bottom {
+    padding: 0px 15px 0px 15px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .bottom {
+    padding: 0px 8px 0px 10px;
+  }
+}
